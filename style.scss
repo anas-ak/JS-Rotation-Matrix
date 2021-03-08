@@ -1,0 +1,43 @@
+html, body { height: 100% }
+
+body {
+    align-items: center;
+    background: #000113;
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-family: Lato;
+    font-weight: 100;
+    justify-content: center;
+    line-height: 1.4;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+}
+
+canvas {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.page-wrap { pointer-events: none; }
+
+.text-container {
+    max-width: 420px;
+    width: 90%;
+}
+
+h1 { font-size: 22px; }
+
+p { font-size: 15px; font-weight: bold; }
+
+.fade-out {
+    animation: fadeOut ease 20s;
+}
+
+@keyframes fadeOut {
+    0% {opacity:1;}
+    50% {opacity: 0}
+    100% {opacity:1;}
+    }
